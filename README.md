@@ -12,7 +12,11 @@ A fork of the [TextBoxes]() project for finetuning and deploying a neural networ
   make -j8
   
   make py
+  
+  export PYTHONPATH=$PYTHONPATH:$CAFFE_ROOT/python
   ```
+ 
+ 
  ### Download
 1. Models trained on ICDAR 2013: [Dropbox link](https://www.dropbox.com/s/g8pjzv2de9gty8g/TextBoxes_icdar13.caffemodel?dl=0) [BaiduYun link](http://pan.baidu.com/s/1qY73XHq)
 2. Fully convolutional reduced (atrous) VGGNet: [Dropbox link](https://www.dropbox.com/s/qxc64az0a21vodt/VGG_ILSVRC_16_layers_fc_reduced.caffemodel?dl=0) [BaiduYun link](http://pan.baidu.com/s/1slQyMiL)
