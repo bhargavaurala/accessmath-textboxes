@@ -43,4 +43,4 @@ export AM_DATA_DIR=/path/to/AccessMathVOC
  ```
 2. Use `cd $CAFFE_ROOT/build/tools ./caffe train_net -iterations 10000 -solver models/VGGNet/text/longer_conv_300x300/solver.prototxt -weights /path/to/model_trained_on_icdar2013`
 3. You should see around 77.5% as the final validation performance.
-4. Transfer the model to `models/text_detection` in the [AccessMath]() root folder
+4. Transfer the model to `models/text_detection` in the [AccessMath](https://github.com/bhargavaurala/accessmath-icfhr2018) root folder
