@@ -1,0 +1,133 @@
+Output of create_data.sh for 300,300
+
+(caffe-textboxes) buralako@puck:~/git/TextBoxes$ ./data/ICDAR13/create_data.sh 
+/home/buralako/git/TextBoxes/build/tools/convert_annoset --anno_type=detection --label_type=xml --label_map_file=/home/buralako/git/TextBoxes/data/ICDAR13/../../data/ICDAR13/labelmap_icdar.prototxt --check_label=True --min_dim=0 --max_dim=0 --resize_height=300 --resize_width=300 --backend=lmdb --shuffle=False --check_size=False --encode_type= --encoded=False --gray=False /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ /home/buralako/git/TextBoxes/data/ICDAR13/../../data/ICDAR13/test.txt /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_test_lmdb
+/home/buralako/git/TextBoxes/build/tools/convert_annoset: /home/buralako/anaconda2/envs/caffe-textboxes/lib/libtiff.so.5: no version information available (required by /usr/local/lib/libopencv_highgui.so.2.4)
+I0315 17:57:56.904600 16114 convert_annoset.cpp:122] A total of 232 images.
+I0315 17:57:56.905246 16114 db_lmdb.cpp:35] Opened lmdb /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_test_lmdb
+I0315 17:58:02.296663 16114 convert_annoset.cpp:201] Processed 232 files.
+/home/buralako/git/TextBoxes/build/tools/convert_annoset --anno_type=detection --label_type=xml --label_map_file=/home/buralako/git/TextBoxes/data/ICDAR13/../../data/ICDAR13/labelmap_icdar.prototxt --check_label=True --min_dim=0 --max_dim=0 --resize_height=300 --resize_width=300 --backend=lmdb --shuffle=False --check_size=False --encode_type= --encoded=False --gray=False /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ /home/buralako/git/TextBoxes/data/ICDAR13/../../data/ICDAR13/trainval.txt /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_trainval_lmdb
+/home/buralako/git/TextBoxes/build/tools/convert_annoset: /home/buralako/anaconda2/envs/caffe-textboxes/lib/libtiff.so.5: no version information available (required by /usr/local/lib/libopencv_highgui.so.2.4)
+I0315 17:58:03.196264 16145 convert_annoset.cpp:122] A total of 228 images.
+I0315 17:58:03.196593 16145 db_lmdb.cpp:35] Opened lmdb /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_trainval_lmdb
+I0315 17:58:09.922626 16145 convert_annoset.cpp:201] Processed 228 files.
+
+Output of train_icdar13.py
+
+I0315 17:59:52.989725 16217 layer_factory.hpp:77] Creating layer data
+I0315 17:59:52.990123 16217 net.cpp:100] Creating Layer data
+I0315 17:59:52.990139 16217 net.cpp:408] data -> data
+I0315 17:59:52.990188 16217 net.cpp:408] data -> label
+I0315 17:59:52.991430 16224 db_lmdb.cpp:35] Opened lmdb /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_trainval_lmdb
+I0315 17:59:53.062340 16217 annotated_data_layer.cpp:52] output data size: 32,3,300,300
+I0315 17:59:53.107219 16217 net.cpp:150] Setting up data
+I0315 17:59:53.107256 16217 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 17:59:53.107264 16217 net.cpp:157] Top shape: 1 1 2 8 (16)
+I0315 17:59:53.107269 16217 net.cpp:165] Memory required for data: 34560064
+I0315 17:59:53.107278 16217 layer_factory.hpp:77] Creating layer data_data_0_split
+I0315 17:59:53.107296 16217 net.cpp:100] Creating Layer data_data_0_split
+I0315 17:59:53.107303 16217 net.cpp:434] data_data_0_split <- data
+I0315 17:59:53.107316 16217 net.cpp:408] data_data_0_split -> data_data_0_split_0
+I0315 17:59:53.107327 16217 net.cpp:408] data_data_0_split -> data_data_0_split_1
+I0315 17:59:53.107347 16217 net.cpp:408] data_data_0_split -> data_data_0_split_2
+I0315 17:59:53.107354 16217 net.cpp:408] data_data_0_split -> data_data_0_split_3
+I0315 17:59:53.107360 16217 net.cpp:408] data_data_0_split -> data_data_0_split_4
+I0315 17:59:53.107367 16217 net.cpp:408] data_data_0_split -> data_data_0_split_5
+I0315 17:59:53.107372 16217 net.cpp:408] data_data_0_split -> data_data_0_split_6
+I0315 17:59:53.107511 16217 net.cpp:150] Setting up data_data_0_split
+I0315 17:59:53.107522 16217 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 17:59:53.107527 16217 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 17:59:53.107532 16217 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 17:59:53.107538 16217 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 17:59:53.107542 16217 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 17:59:53.107547 16217 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 17:59:53.107553 16217 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 17:59:53.107556 16217 net.cpp:165] Memory required for data: 276480064
+I0315 17:59:53.107561 16217 layer_factory.hpp:77] Creating layer conv1_1
+I0315 17:59:53.107578 16217 net.cpp:100] Creating Layer conv1_1
+I0315 17:59:53.107585 16217 net.cpp:434] conv1_1 <- data_data_0_split_0
+I0315 17:59:53.107592 16217 net.cpp:408] conv1_1 -> conv1_1
+F0315 17:59:53.111966 16225 data_transformer.cpp:189] Check failed: height <= datum_height (300 vs. 107) 
+*** Check failure stack trace: ***
+    @     0x7f213921bdaa  (unknown)
+    @     0x7f213921bce4  (unknown)
+    @     0x7f213921b6e6  (unknown)
+    @     0x7f213921e687  (unknown)
+    @     0x7f2139ab5048  caffe::DataTransformer<>::Transform()
+    @     0x7f2139ab928b  caffe::DataTransformer<>::Transform()
+    @     0x7f2139ab9348  caffe::DataTransformer<>::Transform()
+    @     0x7f2139ab93fe  caffe::DataTransformer<>::Transform()
+    @     0x7f213999621f  caffe::AnnotatedDataLayer<>::load_batch()
+    @     0x7f21399efd39  caffe::BasePrefetchingDataLayer<>::InternalThreadEntry()
+    @     0x7f2139a4c280  caffe::InternalThread::entry()
+    @     0x7f21309dda4a  (unknown)
+    @     0x7f212b026184  start_thread
+    @     0x7f2137ca4bed  (unknown)
+    @              (nil)  (unknown)
+Aborted (core dumped)
+
+Output of create_data.sh with default settings
+
+(caffe-textboxes) buralako@puck:~/git/TextBoxes$ ./data/ICDAR13/create_data.sh 
+/home/buralako/git/TextBoxes/build/tools/convert_annoset --anno_type=detection --label_type=xml --label_map_file=/home/buralako/git/TextBoxes/data/ICDAR13/../../data/ICDAR13/labelmap_icdar.prototxt --check_label=True --min_dim=0 --max_dim=0 --resize_height=0 --resize_width=0 --backend=lmdb --shuffle=False --check_size=False --encode_type= --encoded=False --gray=False /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ /home/buralako/git/TextBoxes/data/ICDAR13/../../data/ICDAR13/test.txt /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_test_lmdb
+/home/buralako/git/TextBoxes/build/tools/convert_annoset: /home/buralako/anaconda2/envs/caffe-textboxes/lib/libtiff.so.5: no version information available (required by /usr/local/lib/libopencv_highgui.so.2.4)
+I0315 18:00:43.257148 16266 convert_annoset.cpp:122] A total of 232 images.
+I0315 18:00:43.257588 16266 db_lmdb.cpp:35] Opened lmdb /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_test_lmdb
+I0315 18:00:53.939869 16266 convert_annoset.cpp:201] Processed 232 files.
+/home/buralako/git/TextBoxes/build/tools/convert_annoset --anno_type=detection --label_type=xml --label_map_file=/home/buralako/git/TextBoxes/data/ICDAR13/../../data/ICDAR13/labelmap_icdar.prototxt --check_label=True --min_dim=0 --max_dim=0 --resize_height=0 --resize_width=0 --backend=lmdb --shuffle=False --check_size=False --encode_type= --encoded=False --gray=False /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ /home/buralako/git/TextBoxes/data/ICDAR13/../../data/ICDAR13/trainval.txt /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_trainval_lmdb
+/home/buralako/git/TextBoxes/build/tools/convert_annoset: /home/buralako/anaconda2/envs/caffe-textboxes/lib/libtiff.so.5: no version information available (required by /usr/local/lib/libopencv_highgui.so.2.4)
+I0315 18:00:54.945287 16285 convert_annoset.cpp:122] A total of 228 images.
+I0315 18:00:54.945770 16285 db_lmdb.cpp:35] Opened lmdb /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_trainval_lmdb
+I0315 18:01:10.688495 16285 convert_annoset.cpp:201] Processed 228 files.
+
+I0315 18:02:36.301302 16330 layer_factory.hpp:77] Creating layer data
+I0315 18:02:36.301717 16330 net.cpp:100] Creating Layer data
+I0315 18:02:36.301733 16330 net.cpp:408] data -> data
+I0315 18:02:36.301789 16330 net.cpp:408] data -> label
+I0315 18:02:36.302973 16337 db_lmdb.cpp:35] Opened lmdb /home/buralako/dataset-txt/ICDAR13/Challenge02/Localization/ICDAR13/lmdb/ICDAR13_trainval_lmdb
+I0315 18:02:40.146488 16330 annotated_data_layer.cpp:52] output data size: 32,3,300,300
+I0315 18:02:40.217123 16330 net.cpp:150] Setting up data
+I0315 18:02:40.217164 16330 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 18:02:40.217173 16330 net.cpp:157] Top shape: 1 1 2 8 (16)
+I0315 18:02:40.217180 16330 net.cpp:165] Memory required for data: 34560064
+I0315 18:02:40.217191 16330 layer_factory.hpp:77] Creating layer data_data_0_split
+I0315 18:02:40.217227 16330 net.cpp:100] Creating Layer data_data_0_split
+I0315 18:02:40.217238 16330 net.cpp:434] data_data_0_split <- data
+I0315 18:02:40.217255 16330 net.cpp:408] data_data_0_split -> data_data_0_split_0
+I0315 18:02:40.217272 16330 net.cpp:408] data_data_0_split -> data_data_0_split_1
+I0315 18:02:40.217301 16330 net.cpp:408] data_data_0_split -> data_data_0_split_2
+I0315 18:02:40.217314 16330 net.cpp:408] data_data_0_split -> data_data_0_split_3
+I0315 18:02:40.217321 16330 net.cpp:408] data_data_0_split -> data_data_0_split_4
+I0315 18:02:40.217334 16330 net.cpp:408] data_data_0_split -> data_data_0_split_5
+I0315 18:02:40.217344 16330 net.cpp:408] data_data_0_split -> data_data_0_split_6
+I0315 18:02:40.217476 16330 net.cpp:150] Setting up data_data_0_split
+I0315 18:02:40.217490 16330 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 18:02:40.217499 16330 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 18:02:40.217510 16330 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 18:02:40.217517 16330 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 18:02:40.217525 16330 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 18:02:40.217532 16330 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 18:02:40.217540 16330 net.cpp:157] Top shape: 32 3 300 300 (8640000)
+I0315 18:02:40.217550 16330 net.cpp:165] Memory required for data: 276480064
+I0315 18:02:40.217557 16330 layer_factory.hpp:77] Creating layer conv1_1
+I0315 18:02:40.217583 16330 net.cpp:100] Creating Layer conv1_1
+I0315 18:02:40.217592 16330 net.cpp:434] conv1_1 <- data_data_0_split_0
+I0315 18:02:40.217603 16330 net.cpp:408] conv1_1 -> conv1_1
+F0315 18:02:40.290235 16338 data_transformer.cpp:197] Check failed: datum_height == height (979 vs. 300) 
+*** Check failure stack trace: ***
+    @     0x7f72d7efbdaa  (unknown)
+    @     0x7f72d7efbce4  (unknown)
+    @     0x7f72d7efb6e6  (unknown)
+    @     0x7f72d7efe687  (unknown)
+    @     0x7f72d8795048  caffe::DataTransformer<>::Transform()
+    @     0x7f72d879928b  caffe::DataTransformer<>::Transform()
+    @     0x7f72d8799348  caffe::DataTransformer<>::Transform()
+    @     0x7f72d87993fe  caffe::DataTransformer<>::Transform()
+    @     0x7f72d867621f  caffe::AnnotatedDataLayer<>::load_batch()
+    @     0x7f72d86cfd39  caffe::BasePrefetchingDataLayer<>::InternalThreadEntry()
+    @     0x7f72d872c280  caffe::InternalThread::entry()
+    @     0x7f72cf6bda4a  (unknown)
+    @     0x7f72c9d06184  start_thread
+    @     0x7f72d6984bed  (unknown)
+    @              (nil)  (unknown)
+Aborted (core dumped)
