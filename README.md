@@ -1,5 +1,6 @@
 # accessmath-textboxes
-A fork of the [TextBoxes]() project for finetuning and deploying a neural network for detection of handwritten whiteboard content in lecture videos
+
+This project is meant as a helper for our [main work](https://github.com/bhargavaurala/accessmath-icfhr2018) for detection of handwritten whiteboard content in lecture videos. It is a fork of [TextBoxes](https://github.com/MhLiao/TextBoxes).
 
 # Setting up Textboxes
 
