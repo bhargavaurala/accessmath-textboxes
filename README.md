@@ -28,9 +28,11 @@ export AM_DATA_DIR=/path/to/AccessMathVOC
 
 ### Generate training, validation and test LMDBs.
 
-1.
-2.
-3.
+1. `cd $CAFFE_ROOT/data/AccessMath` 
+2. `python create_list.py $AM_DATA_DIR` 
+3. `./create_list_trainval.sh`
+4. `./create_list_test.sh`
+5. `./create_data.sh`
 
 ### Train
 1. In `models/VGGNet/text/longer_conv_300x300/` Modify `data_param` in the first layer (`data`) in `train.prototxt` and `test.prototxt` as shown below
