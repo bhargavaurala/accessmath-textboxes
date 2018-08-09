@@ -26,7 +26,7 @@ A fork of the [TextBoxes]() project for finetuning and deploying a neural networ
 export AM_DATA_DIR=/path/to/AccessMathVOC
 ```
 
-### Generate training, validation and test LMDBs.
+### Generate training and validation LMDBs.
 
 1. `cd $CAFFE_ROOT/data/AccessMath`
 2. `./create_data.sh`
