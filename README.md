@@ -8,7 +8,7 @@ This project is meant as a helper for our [main work](https://github.com/bhargav
   ```Shell
   git clone https://github.com/bhargavaurala/accessmath-textboxes.git
   
-  cd TextBoxes
+  cd accessmath-textboxes
   
   make -j8
   
