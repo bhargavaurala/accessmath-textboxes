@@ -10,9 +10,9 @@ This project is meant as a helper for our [main work](https://github.com/bhargav
   
   cd accessmath-textboxes
   ```
-2. Edit the makefile configuration file according to your system needs. Refer Caffe installation [instructions](http://caffe.berkeleyvision.org/installation.html) for details about dependencies. Make sure that the python wrapper dependencies are installed since we need that for this project. This code has been tested on Ubuntu 14.04.
+2. Edit the makefile configuration file `Makefile.config` according to your system needs. Refer Caffe installation [instructions](http://caffe.berkeleyvision.org/installation.html) for details about dependencies. Make sure that the python wrapper dependencies are installed since we need that for this project. This code has been tested on Ubuntu 14.04.
   ```
-  mv Makefile.config.example Makefile.config
+  cp Makefile.config.example Makefile.config
   ```
 3. Build caffe, caffe-python.
   ```
