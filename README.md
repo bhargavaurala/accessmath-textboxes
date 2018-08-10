@@ -9,14 +9,19 @@ This project is meant as a helper for our [main work](https://github.com/bhargav
   git clone https://github.com/bhargavaurala/accessmath-textboxes.git
   
   cd accessmath-textboxes
-  
+  ```
+2. Edit the makefile configuration file according to your system needs. Refer Caffe installation [instructions](http://caffe.berkeleyvision.org/installation.html) for details about dependencies. Make sure that the python wrapper dependencies are installed since we need that for this project. This code has been tested on Ubuntu 14.04.
+  ```
+  mv Makefile.config.example Makefile.config
+  ```
+3. Build caffe, caffe-python.
+  ```
   make -j8
   
   make py
   
   export PYTHONPATH=$PYTHONPATH:$CAFFE_ROOT/python
-  ```
- 
+  ``` 
  
  ### Download
 1. Models trained on ICDAR 2013: [Dropbox link](https://www.dropbox.com/s/g8pjzv2de9gty8g/TextBoxes_icdar13.caffemodel?dl=0) [BaiduYun link](http://pan.baidu.com/s/1qY73XHq)
