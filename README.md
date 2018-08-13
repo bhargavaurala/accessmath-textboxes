@@ -24,7 +24,7 @@ This project is meant as a helper for our [main work](https://github.com/bhargav
   
   export PYTHONPATH=$PYTHONPATH:$CAFFE_ROOT/python
   
-  python -c "import caffe; print caffe.__version__"
+  python -c "import caffe"
   ``` 
  
  ### Download
