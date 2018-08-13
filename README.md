@@ -13,6 +13,8 @@ This project is meant as a helper for our [main work](https://github.com/bhargav
 2. Edit the makefile configuration file `Makefile.config` according to your system needs. Refer Caffe installation [instructions](http://caffe.berkeleyvision.org/installation.html) for details about dependencies. Make sure that the python wrapper dependencies are installed since we need that for this project. This code has been tested on Ubuntu 14.04.
   ```
   cp Makefile.config.example Makefile.config
+  
+  mkdir build
   ```
 3. Build caffe, caffe-python.
   ```
