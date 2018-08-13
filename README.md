@@ -16,13 +16,15 @@ This project is meant as a helper for our [main work](https://github.com/bhargav
   
   mkdir build
   ```
-3. Build caffe, caffe-python.
+3. Build caffe, caffe-python and test if build went correctly.
   ```
   make -j8
   
   make py
   
   export PYTHONPATH=$PYTHONPATH:$CAFFE_ROOT/python
+  
+  python -c "import caffe; print caffe.__version__"
   ``` 
  
  ### Download
