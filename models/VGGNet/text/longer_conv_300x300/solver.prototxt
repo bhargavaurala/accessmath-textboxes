@@ -1,0 +1,25 @@
+train_net: "models/VGGNet/text/longer_conv_300x300/train.prototxt"
+test_net: "models/VGGNet/text/longer_conv_300x300/test.prototxt"
+test_iter: 2553
+test_interval: 1000
+base_lr: 9.99999974738e-05
+display: 100
+max_iter: 12000
+lr_policy: "step"
+gamma: 0.630957365036
+momentum: 0.899999976158
+weight_decay: 0.000500000023749
+stepsize: 1000
+snapshot: 1000
+snapshot_prefix: "models/VGGNet/text/longer_conv_300x300/VGG_text_longer_conv_300x300"
+solver_mode: GPU
+device_id: 0
+debug_info: false
+snapshot_after_train: true
+test_initialization: true
+average_loss: 10
+iter_size: 1
+type: "SGD"
+eval_type: "detection"
+ap_version: "11point"
+
