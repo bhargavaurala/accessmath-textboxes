@@ -31,7 +31,7 @@ This project is meant as a helper for our [main work](https://github.com/bhargav
 1. Models trained on ICDAR 2013: [Dropbox link](https://www.dropbox.com/s/g8pjzv2de9gty8g/TextBoxes_icdar13.caffemodel?dl=0) [BaiduYun link](http://pan.baidu.com/s/1qY73XHq)
 2. Fully convolutional reduced (atrous) VGGNet: [Dropbox link](https://www.dropbox.com/s/qxc64az0a21vodt/VGG_ILSVRC_16_layers_fc_reduced.caffemodel?dl=0) [BaiduYun link](http://pan.baidu.com/s/1slQyMiL)
 3. Compiled mex file for evaluation(for multi-scale test evaluation: evaluation_nms.m): [Dropbox link](https://www.dropbox.com/s/xtjuwvphxnz1nl8/polygon_intersect.mexa64?dl=0) [BaiduYun link](http://pan.baidu.com/s/1jIe9UWA)
-4. Frame version of the AccessMath dataset from [here](). Place this folder on your disk and export the path to shell
+4. Frame version of the AccessMath dataset from [here](https://buffalo.box.com/s/6gklgrotfd5drbxvdw2xtrt9i2ldmt01). Download the 3-part zip archive and extract into a folder called AccessMathVOC and place in [AccessMath-ICFHR18](https://github.com/bhargavaurala/accessmath-icfhr2018) project root.
 ```
 export AM_DATA_DIR=/path/to/AccessMathVOC
 ```
