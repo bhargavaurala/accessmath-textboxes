@@ -1623,7 +1623,7 @@ layer {
       top_k: 400
     }
     save_output_param {
-      output_directory: "/home/buralako/data/text/results/text/longer_conv_300x300/Main"
+      output_directory: "results"
       output_name_prefix: "comp4_det_test_"
       output_format: "VOC"
       label_map_file: "data/AccessMath/labelmap_accessmath.prototxt"
